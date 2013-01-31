@@ -6,19 +6,21 @@ import javax.swing.JOptionPane;
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!
  * Do not change this fact.
  *
- * @author      your name goes here
+ * @author      Timothy Leibl
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends JavaCourseRequirements {
     private String courseName;
     private String courseNumber;
     private double credits;
+
     
     
     //I changed the methods in this class to inherate from the superclass mehtods
     // This creates the flexibility to write your own exections to the mehtods for 
     //determining requirements for coure names, coure numbers, and pre reqs without having to write 
     //seperate methods for each class
+    //There are no setters for course name, course number, and credits, which I added in
 
       @Override
     public void setCourseNumber() {
@@ -55,19 +57,25 @@ public class IntroToProgrammingCourse extends JavaCourseRequirements {
             System.exit(0);
           
     }
-    
-    } 
-    
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
         
     }
-
-    public String getCourseNumber() {
-        return courseNumber;
+        
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 
-    
+    public void setCourseNumber(String courseNumber) {
+        this.courseNumber = courseNumber;
+    }
 
+    public void setCredits(double credits) {
+        this.credits = credits;
+    }
+    
+     public String getCourseNumber() {
+        return courseNumber;
+    }
+     
     public double getCredits() {
         return credits;
     }

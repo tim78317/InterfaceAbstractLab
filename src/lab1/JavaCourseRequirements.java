@@ -14,5 +14,8 @@ public abstract class JavaCourseRequirements {
     public abstract void setPrerequisites();
     
     public abstract void setCredits();
+   
+   
+
     
 }

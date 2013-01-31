@@ -3,20 +3,20 @@ package lab1;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      Timothy Liebl
  * @version     1.00
  */
 public class IntroJavaCourse extends JavaCourseRequirements {
     String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
     
-    //There are no pre req requirements for the intro class so there is no need for the 
-    //pre req getter and setters
     //also there was no setter for credits, which I added in the class
     //There are no checks for error input for this class so I added the checks in the 
     //set name and set credits
-    //also there is no need for the prerequisite property in this class
+    //added code for validating the pre req method
+   
     
     @Override
     public void setCourseNumber() {
@@ -40,7 +40,11 @@ public class IntroJavaCourse extends JavaCourseRequirements {
 
     @Override
     public void setPrerequisites() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(prerequisites == null || prerequisites.length() == 0) {
+            System.out.println(
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
     }
 
     @Override
@@ -54,6 +58,14 @@ public class IntroJavaCourse extends JavaCourseRequirements {
            
            
     
+    }
+
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
     }
 
     
