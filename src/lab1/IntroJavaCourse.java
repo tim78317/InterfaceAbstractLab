@@ -10,21 +10,32 @@ public class IntroJavaCourse extends JavaCourseRequirements {
     String courseName;
     private String courseNumber;
     private double credits;
-    private String prerequisites;
-
-    
     
     //There are no pre req requirements for the intro class so there is no need for the 
     //pre req getter and setters
+    //also there was no setter for credits, which I added in the class
+    //There are no checks for error input for this class so I added the checks in the 
+    //set name and set credits
+    //also there is no need for the prerequisite property in this class
     
     @Override
     public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet.");
+          if(courseNumber == null || courseNumber.length() == 0) {
+            System.out.println(
+                    "Error: courseNumber cannot be null of empty string");
+            System.exit(0);
+          }
     }
 
     @Override
     public void setCoursename() {
-        throw new UnsupportedOperationException("Not supported yet.");
+          if(courseName == null || courseName.length() == 0) {
+            System.out.println(
+                    "Error: courseName cannot be null of empty string");
+            System.exit(0);
+          
+     }
+          
     }
 
     @Override
@@ -40,16 +51,13 @@ public class IntroJavaCourse extends JavaCourseRequirements {
             System.exit(0);
     }
     
+           
+           
     
-    
-    
-    
-    
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
     }
 
+    
+    
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -61,6 +69,10 @@ public class IntroJavaCourse extends JavaCourseRequirements {
     public double getCredits() {
         return credits;
     }
+     public void setCredits(double credits) {
+        this.credits = credits;
+    }
+
 
 
     }
