@@ -12,7 +12,7 @@ public class AdvancedJavaCourse extends JavaCourseRequirements {
     String courseName;
     private String courseNumber;
     private double credits;
-    private String prerequisites;
+    private String preRequisites;
     //There are no getters and setters for creidts
     //There is no setter for pre req
     //your dont need a get capital course name, there is a built in function called ToUpper()
@@ -33,7 +33,7 @@ public class AdvancedJavaCourse extends JavaCourseRequirements {
     }
 
     @Override
-    public void setCoursename() {
+    public void setCourseName() {
        if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
@@ -44,8 +44,8 @@ public class AdvancedJavaCourse extends JavaCourseRequirements {
     }
 
     @Override
-    public void setPrerequisites() {
-            if(prerequisites == null || prerequisites.length() == 0) {
+    public void setPreRequisites() {
+            if(preRequisites == null || preRequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
             System.exit(0);
@@ -70,12 +70,12 @@ public class AdvancedJavaCourse extends JavaCourseRequirements {
     }
 
     public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
+        this.preRequisites = prerequisites;
     }
    
 
     public String getPrerequisites() {
-        return prerequisites;
+        return preRequisites;
     }
 
     public String getCourseName() {
