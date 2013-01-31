@@ -7,5 +7,12 @@ package lab1;
  */
 public abstract class JavaCourseRequirements {
     
+    public abstract void setCourseNumber();
+    
+    public abstract void setCoursename();
+    
+    public abstract void setPrerequisites();
+    
+    public abstract void setCredits();
     
 }
