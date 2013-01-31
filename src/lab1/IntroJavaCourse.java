@@ -11,13 +11,25 @@ public class IntroJavaCourse extends JavaCourseRequirements {
     private String courseNumber;
     private double credits;
     private String preRequisites;
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void setPreRequisites(String preRequisites) {
+        this.preRequisites = preRequisites;
+    }
     
     //also there was no setter for credits, which I added in the class
     //There are no checks for error input for this class so I added the checks in the 
     //set name and set credits
     //added code for validating the pre req method
     //pre req variable needs to be camel case
-   
+   //not getter for course name
     
     @Override
     public void setCourseNumber() {

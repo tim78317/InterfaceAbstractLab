@@ -10,14 +10,18 @@ import javax.swing.JOptionPane;
 public class StartProgram {
     
     public static void main(String[] args){
+        AdvancedJavaCourse course3 = new AdvancedJavaCourse();
+        IntroJavaCourse course2 = new IntroJavaCourse();
+        IntroToProgrammingCourse course1 = new IntroToProgrammingCourse();
+        course1.setCourseName();
+        course1.setCourseNumber();
+        course1.setCredits();
+        course1.getCourseName();
         
-        IntroToProgrammingCourse course = new IntroToProgrammingCourse();
-        course.setCourseName();
-        course.setCourseNumber();
-        course.setCredits();
-        JOptionPane.showMessageDialog(null,course.getCourseName());
-        //course.getCourseNumber();
-        //course.getCredits();
+        course2.setCourseName();
+        course2.setCourseNumber();
+        course2.setCredits();
+        course2.getCourseName();
         
         
         

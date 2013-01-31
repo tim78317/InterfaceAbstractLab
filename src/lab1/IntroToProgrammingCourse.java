@@ -88,6 +88,7 @@ public class IntroToProgrammingCourse extends JavaCourseRequirements {
 
 
     public String getCourseName() {
+        JOptionPane.showMessageDialog(null, "Course Name is " + courseName);
         return courseName;
     }
   
