@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends JavaCourseRequirements {
-    String courseName;
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String preRequisites;

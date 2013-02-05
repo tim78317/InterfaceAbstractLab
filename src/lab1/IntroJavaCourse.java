@@ -7,7 +7,7 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends JavaCourseRequirements {
-    String courseName;
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String preRequisites;

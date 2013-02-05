@@ -1,8 +1,6 @@
 
-package lab1;
-
+package lab2;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author tim78317
@@ -10,11 +8,11 @@ import javax.swing.JOptionPane;
 public class StartProgram {
     
     public static void main(String[] args){
-        AdvancedJavaCourse course3 = new AdvancedJavaCourse();
-        IntroJavaCourse course2 = new IntroJavaCourse();
-        IntroToProgrammingCourse course1 = new IntroToProgrammingCourse();
-        
-        
+       AdvancedJavaCourse course3 = new AdvancedJavaCourse();
+       IntroJavaCourse course2 = new IntroJavaCourse();
+       IntroToProgrammingCourse course1 = new IntroToProgrammingCourse();
+       
+       
         course1.setCourseName();
         course1.setCourseNumber();
         course1.setCredits();
@@ -30,14 +28,6 @@ public class StartProgram {
         course3.setCredits();
         course3.getCourseName();
         
-        
-        
-        
-        
-        
-        
-        
-        
     }
-    
+        
 }
